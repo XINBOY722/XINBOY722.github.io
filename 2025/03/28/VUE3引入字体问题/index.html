@@ -7,17 +7,17 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="今天做项目时候，遇到了一个问题，就是在VUE3中引入字体文件，发现字体文件没有生效，经过一番排查，还是没有解决。查阅大量资料后，在博客： 亲身踩坑 多种方法帮你解决 Failed to decode downloaded font VUE 引入字体没有效果-CSDN博客 找到了解决方法，特别感谢。 问题描述出现如下的警告 这个时候是因为ttf格式解析失败导致的，需要用根据转为woff和woff2">
+<meta name="description" content="今天做项目时候，遇到了一个问题，就是在VUE3中引入字体文件，发现字体文件没有生效，经过一番排查，还是没有解决。查阅大量资料后，在博客： 亲身踩坑 多种方法帮你解决 Failed to decode downloaded font VUE 引入字体没有效果-CSDN博客 找到了解决方法，特别感谢。 问题描述出现如下的警告 这个时候是因为ttf格式解析失败导致的，需要用工具转为woff和woff2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VUE3引入字体问题">
 <meta property="og:url" content="http://example.com/2025/03/28/VUE3%E5%BC%95%E5%85%A5%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="今天做项目时候，遇到了一个问题，就是在VUE3中引入字体文件，发现字体文件没有生效，经过一番排查，还是没有解决。查阅大量资料后，在博客： 亲身踩坑 多种方法帮你解决 Failed to decode downloaded font VUE 引入字体没有效果-CSDN博客 找到了解决方法，特别感谢。 问题描述出现如下的警告 这个时候是因为ttf格式解析失败导致的，需要用根据转为woff和woff2">
+<meta property="og:description" content="今天做项目时候，遇到了一个问题，就是在VUE3中引入字体文件，发现字体文件没有生效，经过一番排查，还是没有解决。查阅大量资料后，在博客： 亲身踩坑 多种方法帮你解决 Failed to decode downloaded font VUE 引入字体没有效果-CSDN博客 找到了解决方法，特别感谢。 问题描述出现如下的警告 这个时候是因为ttf格式解析失败导致的，需要用工具转为woff和woff2">
 <meta property="og:locale">
 <meta property="og:image" content="http://example.com/404.jpg">
 <meta property="og:image" content="http://example.com/404.jpg">
 <meta property="article:published_time" content="2025-03-28T05:28:14.000Z">
-<meta property="article:modified_time" content="2025-03-28T05:46:57.140Z">
+<meta property="article:modified_time" content="2025-03-28T07:08:57.620Z">
 <meta property="article:author" content="konoXIN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/404.jpg">
@@ -66,7 +66,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"konoXIN","root":"/","typed_text":["Web Developer"],"theme_version":"2.2.5","theme":{"switch":true,"default":"style-dark"},"favicon":{"logo":"logo.svg","icon16":"favicon-16x16.png","icon32":"favicon-32x32.png","apple_touch_icon":"apple-touch-icon.png","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://npm.elemecdn.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":false,"title":"default","height_limit":200},"toc":{"post_title":true},"live_time":{"start_time":"04/10/2024 00:00:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-03-28 13:46:57"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-03-28 15:08:57"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.5" id="trm-switch-style">
@@ -379,7 +379,7 @@
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Youweretrouble/article/details/129451853">亲身踩坑 多种方法帮你解决 Failed to decode downloaded font VUE 引入字体没有效果-CSDN博客</a></p>
 <p>找到了解决方法，特别感谢。</p>
 <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>出现如下的警告<br><img src="/images/VUE3%E5%BC%95%E5%85%A5%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/image2.png" alt="spFrou"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/404.jpg"'></p>
-<p>这个时候是因为ttf格式解析失败导致的，需要用根据转为woff和woff2</p>
+<p>这个时候是因为ttf格式解析失败导致的，需要用工具转为woff和woff2</p>
 <p>使用网站把ttf转为woff和woff2：</p>
 <p> <a target="_blank" rel="noopener" href="https://transfonter.org/">Online @font-face generator — Transfonter</a> </p>
 <p><img src="/images/VUE3%E5%BC%95%E5%85%A5%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/image.png" alt="spFrou"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/404.jpg"'></p>
