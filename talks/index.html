@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="&#x2F;*加载样式*&#x2F; .qexo_inner, .qexo_loader {   border-radius: 50%;   position: absolute; } .qexo_loading {   min-height: 200px; } .qexo_part {   min-height: 100px; } .qexo_loader {   background-color:">
+<meta property="og:type" content="website">
+<meta property="og:title" content="花径不曾缘客扫，蓬门今始为君开。">
+<meta property="og:url" content="https://www.konoxin.top/talks/index.html">
+<meta property="og:site_name" content="konoXIN&#39;s Blog | 前端开发 | Vue.js &amp; JavaScript 技术分享">
+<meta property="og:description" content="&#x2F;*加载样式*&#x2F; .qexo_inner, .qexo_loader {   border-radius: 50%;   position: absolute; } .qexo_loading {   min-height: 200px; } .qexo_part {   min-height: 100px; } .qexo_loader {   background-color:">
+<meta property="og:locale">
+<meta property="article:published_time" content="2025-04-02T03:42:00.000Z">
+<meta property="article:modified_time" content="2025-04-03T21:26:49.381Z">
+<meta property="article:author" content="konoXIN">
+<meta property="article:tag" content="前端开发,Vue.js,JavaScript,编程,技术博客,web开发,前端框架,前端教程,前端项目,前端学习,前端性能优化,前端工程化,前端面试,前端工具">
+<meta name="twitter:card" content="summary">
+
+    <meta name="keywords" content="前端开发,Vue.js,JavaScript,编程,技术博客,web开发,前端框架,前端教程,前端项目,前端学习,前端性能优化,前端工程化,前端面试,前端工具">
+
+
+<title >花径不曾缘客扫，蓬门今始为君开。</title>
+
+<!-- Favicon -->
+
+    <link href='/favicon-16x16.png?v=2.2.5' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/favicon-32x32.png?v=2.2.5' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+    <link href='/apple-touch-icon.png?v=2.2.5' rel='apple-touch-icon' sizes='180x180' ></link>
+
+
+    <link href='/site.webmanifest' rel='manifest' ></link>
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"www.konoxin.top","author":"konoXIN","root":"/","typed_text":["Web Developer"],"theme_version":"2.2.5","theme":{"switch":true,"default":"style-dark"},"favicon":{"logo":"logo.svg","icon16":"favicon-16x16.png","icon32":"favicon-32x32.png","apple_touch_icon":"apple-touch-icon.png","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://npm.elemecdn.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":false,"title":"default","height_limit":200},"toc":{"post_title":true},"live_time":{"start_time":"04/10/2024 00:00:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":true,"el":".trm-banner","avatar":true},"covers":["https://hbzoss.yaash.cn/image/55856341c548a445@middle","https://hbzoss.yaash.cn/image/e1aa0779075e81f5@small","https://hbzoss.yaash.cn/image/efc37653a280c2ae@small","https://hbzoss.yaash.cn/image/aff2d41430915903@small","https://hbzoss.yaash.cn/image/14f6e897a0a883c0@small","https://hbzoss.yaash.cn/image/548bc09f681ac2d1@small","https://hbzoss.yaash.cn/image/d5cf4e79cea7d4da@small","https://hbzoss.yaash.cn/image/60f65e279f6a8b81@small","https://hbzoss.yaash.cn/image/d5041070598096f6@small","https://hbzoss.yaash.cn/image/d24cdb05550c622e@small","https://hbzoss.yaash.cn/image/2bc7c4b33d9a79b3@small","https://hbzoss.yaash.cn/image/badea421af3eade0@small","https://hbzoss.yaash.cn/image/7ba01faea2a82662@small","https://hbzoss.yaash.cn/image/f4bd186f414c8820@small","https://hbzoss.yaash.cn/image/7f89b14022d4b248@small","https://hbzoss.yaash.cn/image/699dc2c772c3a775@small","https://hbzoss.yaash.cn/image/4b45ba85f9526eb6@small","https://hbzoss.yaash.cn/image/b51b591e322b59c4@small","https://hbzoss.yaash.cn/image/a361462a5b21dbc1@small","https://hbzoss.yaash.cn/image/8a4dbd810959dabc@small"],"creative_commons":{"license":"by-nc-sa","language":"deed.zh-hans"},"notice_outdate":{"enable":true,"style":"flat","limit_day":100,"position":"top"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2025-04-04 05:26:49"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.5" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+
+     
+
+    
+
+    
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+        <img alt="logo" src="/logo.svg">
+    
+    
+        <div class="trm-logo-text">
+            XIN&#39;s<span>Blog</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    home
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a data-no-swup href="/archives/" target="">
+                    archives
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/links/" target="">
+                    links
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    about
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children current-menu-item">
+                <a  href="/talks/" target="">
+                    talks
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+    
+    <div id="trm-search-btn" class="trm-search-btn">
+        <i class="iconfont fas fa-search"></i>
+    </div>
+     
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+
+    
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text trm-text-center ">
+                        <div class="trm-label trm-mb-20">
+                            Hi my new friend!
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            花径不曾缘客扫，蓬门今始为君开。
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        talks
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+            <div class="trm-page-content col-lg-12">
+                <div id="trm-content" class="trm-content">
+                    <div id="qexot"></div>
+<link rel="stylesheet" href="https://registry.npmmirror.com/qexo-static/1.6.0/files/hexo/talks.css">
+<style>
+    /*加载样式*/
+.qexo_inner,
+.qexo_loader {
+  border-radius: 50%;
+  position: absolute;
+}
+.qexo_loading {
+  min-height: 200px;
+}
+.qexo_part {
+  min-height: 100px;
+}
+.qexo_loader {
+  background-color: #90939920;
+  width: 64px;
+  height: 64px;
+  perspective: 800px;
+}
+.qexo_inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.qexo_inner.one {
+  left: 0;
+  top: 0;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid #888;
+  position: absolute;
+}
+.qexo_inner.two {
+  right: 0;
+  top: 0;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid #888;
+  position: absolute;
+}
+.qexo_inner.three {
+  right: 0;
+  bottom: 0;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid #888;
+  position: absolute;
+}
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+#qexot > section > div > div > div {
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-top: 12px;
+}
+#qexot > section > div > div {
+  box-shadow: -1px 5px 10px 0 rgba(50, 50, 93, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.07) !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#qexot p {
+  margin: 0;
+}
+#qexot .datafrom i {
+  margin-right: 4px;
+} 
+#qexot > section > div > div > div .qexot-datatime {
+  order: 1;
+  font-size: 0.6rem;
+}
+#qexot > section > div > div > div .qexot-tags {
+  font-size: .6rem;
+  margin-top: -7%;
+}
+#qexot > section > div > div > div .datacont {
+  order: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  line-height: 1.38;
+  margin: 8px 0;
+}
+#qexot .qexot-like {
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: xx-small;
+  fill: currentColor;
+}
+#qexot .qexot-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#qexot .qexot-top {
+  position: absolute;
+  white-space: nowrap;
+  right: 13%;
+}
+#qexot div.qexot-content {
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  width: 100%;
+}
+#qexot .qexot div div.qexot-item {
+  width: 90%;
+  border-radius: 12px;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+.qexot-more {
+  border-width: 1px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: -1px 5px 10px 0 rgba(50, 50, 93, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.07) !important;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  padding-bottom: calc(0.375em - 1px);
+  padding-top: calc(0.375em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  width: 20%;
+  margin-bottom: 10px;
+}
+</style>
+<script>
+    var qexo_talks = [];
+var talk_page = 1;
+var qexoFormatTime = function () {
+  var format = arguments[0] !== (void 0) ? arguments[0] : "";
+  var num = arguments[1] !== (void 0) ? arguments[1] : new Date().getTime();
+  format = format || "YYYY-mm-dd HH:MM:SS";
+  var ret,
+    date,
+    renum;
+  if (num.toString().length == 10) {
+    date = new Date(parseInt(num) * 1000);
+  } else {
+    date = new Date(parseInt(num));
+  }
+  var opt = {
+    "Y": date.getFullYear().toString(),
+    "m": (date.getMonth() + 1).toString(),
+    "d": date.getDate().toString(),
+    "H": date.getHours().toString(),
+    "M": date.getMinutes().toString(),
+    "S": date.getSeconds().toString()
+  };
+  for (var k in opt) {
+    ret = new RegExp("(" + k + "+)").exec(format);
+    if (ret) {
+      renum = (ret[1].length == 1) ? (opt[k]) : (opt[k].padStart(ret[1].length, "0"));
+      format = format.replace(ret[1], renum);
+    };
+  };
+  return format;
+};
+function likeQexoTalk(id, url, domid, limit) {
+  var uri = url + "/pub/like_talk/";
+  var ajax;
+  try {
+    ajax = new XMLHttpRequest();
+  } catch (e) {
+    try {
+      ajax = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        ajax = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {
+        alert("糟糕,你的浏览器不能上传文件!");
+        return false;
+      }
+    }
+  }
+  ajax.open("post", uri, true);
+  ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  ajax.onreadystatechange = function () {
+    if (ajax.readyState == 4) {
+      if (ajax.status == 200) {
+        var res = JSON.parse(ajax.response);
+        if (res["status"]) {
+          for (var i = 0; i < qexo_talks.length; i++) {
+            if (qexo_talks[i]["id"] == id) {
+              if (res["action"]) {
+                qexo_talks[i]["like"]++;
+                qexo_talks[i]["liked"] = true;
+              } else {
+                qexo_talks[i]["like"]--;
+                qexo_talks[i]["liked"] = false;
+              }
+              var html = '<section class="qexot"><div class="qexot-list">';
+              for (var i = 0; i < qexo_talks.length; i++) {
+                html += generateQexoTalkItem(qexo_talks[i]['id'], qexo_talks[i]['content'], qexoFormatTime("YYYY-mm-dd", Number(qexo_talks[i]['time'])), qexo_talks[i]['tags'].join(", "), qexo_talks[i]['like'], qexo_talks[i]['liked'], url, domid, limit);
+              }
+              html += '</div></section>';
+              if (document.getElementById("qexot-more")) {
+                html += '<center id="qexot-more"><div class="qexot-more" onclick="showQexoTalks(\'' + domid + '\',\'' + url + '\',\'' + limit + '\',true)">加载更多</div></center>';
+              }
+              document.getElementById(domid).innerHTML = html;
+              break;
+            }
+          }
+        } else {
+          console.log(res["data"]["msg"]);
+        }
+      } else {
+        console.log("点赞失败! 网络错误");
+      }
+    }
+  };
+  ajax.send("id=" + id);
+}
+function generateQexoTalkItem(id, content, time, tags, _like, liked, url, domid, limit) {
+  tags = tags?"#"+tags:"";
+  var like = liked ? ("<a class=\"qexot-like\" onclick=\"likeQexoTalk('" + id + "', '" + url + "', '" + domid + "', '" + limit + "')\"><svg xmlns=\"http://www.w3.org/2000/svg\" height=\"16\" width=\"16\" fill=\"red\">\n    <path transform=\"scale(0.03,0.03)\"\n      d=\"M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z\"\n    /></svg> " + _like + "</a>") : ("<a class=\"qexot-like\" onclick=\"likeQexoTalk('" + id + "', '" + url + "', '" + domid + "', '" + limit + "')\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"16\" width=\"16\">\n    <path\n      transform=\"scale(0.03,0.03)\"\n      d=\"M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z\"\n    ></path></svg> " + _like + "</a>");
+  var html = ("<div class=\"qexot-item\">\n  <div class=\"qexot-top\">\n      <a class=\"qexot-tags\">" + tags + "</a>\n  </div>\n  <div class=\"qexot-content\">\n    <div class=\"datacont\">\n    " + content + "\n    </div>\n  </div>\n  <div class=\"qexot-bottom\">\n    <div class=\"qexot-info\">\n      <time class=\"qexot-datatime\" datetime=\"" + time + "\">" + time + "</time>\n    </div>" + like + "</div></div>");
+  return html;
+}
+function showQexoTalks(id, url) {
+  var limit = arguments[2] !== (void 0) ? arguments[2] : 5;
+  var more = arguments[3] !== (void 0) ? arguments[3] : false;
+  if (more) {
+    document.getElementById("qexot-more").innerHTML = "";
+  } else {
+    document.getElementById(id).innerHTML = '<div class="qexo_loading"><div class="qexo_part"><div style="display: flex; justify-content: center"><div class="qexo_loader"><div class="qexo_inner one"></div><div class="qexo_inner two"></div><div class="qexo_inner three"></div></div></div></div><p style="text-align: center; display: block">说说加载中...</p></div>';
+  }
+  var uri = url + "/pub/talks/?page=" + talk_page + "&limit=" + limit;
+  var ajax;
+  try {
+    ajax = new XMLHttpRequest();
+  } catch (e) {
+    try {
+      ajax = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        ajax = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {
+        alert("糟糕,你的浏览器不能上传文件!");
+        return false;
+      }
+    }
+  }
+  ajax.open("get", uri, true);
+  ajax.setRequestHeader("Content-Type", "text/plain");
+  ajax.onreadystatechange = function () {
+    if (ajax.readyState == 4) {
+      if (ajax.status == 200) {
+        var res = JSON.parse(ajax.response);
+        if (res["status"]) {
+          qexo_talks = qexo_talks.concat(res["data"]);
+          var html = '<section class="qexot"><div class="qexot-list">';
+          for (var i = 0; i < qexo_talks.length; i++) {
+            html += generateQexoTalkItem(qexo_talks[i]['id'], qexo_talks[i]['content'], qexoFormatTime("YYYY-mm-dd", Number(qexo_talks[i]['time'])), qexo_talks[i]['tags'].join(", "), qexo_talks[i]['like'], qexo_talks[i]['liked'], url, id, limit);
+          }
+          html += '</div></section>';
+          if (res["count"] > qexo_talks.length) {
+            html += '<center id="qexot-more"><div class="qexot-more" onclick="showQexoTalks(\'' + id + '\',\'' + url + '\',\'' + limit + '\',true)">加载更多</div></center>';
+          }
+          document.getElementById(id).innerHTML = html;
+          talk_page++;
+        } else {
+          console.log(res["data"]["msg"]);
+        }
+      } else {
+        console.log("说说获取失败! 网络错误");
+      }
+    }
+  };
+  ajax.send(null);
+}
+  document.addEventListener("DOMContentLoaded", function() {
+    if (typeof showQexoTalks === 'function') {
+      showQexoTalks("qexot", "https://admin.konoxin.top", 5);
+    } else {
+      console.error("showQexoTalks function is not defined");
+    }
+  });
+</script>
+
+
+    <div id="giscus-wrap" class="trm-card trm-scroll-animation comment-container"></div>
+<script data-swup-reload-script>
+    function loadGiscus() {
+        let nowTheme = document.documentElement.classList.contains('dark') ? 'transparent_dark' : 'light'
+        const config = {
+            src: 'https://giscus.app/client.js',
+            "data-repo": 'XINBOY722/blogCommentv',
+            "data-repo-id": 'R_kgDOORYyEg',
+            "data-category": 'Announcements',
+            "data-category-id": 'DIC_kwDOORYyEs4CooDY',
+            "data-mapping": 'pathname',
+            "data-reactions-enabled": '1',
+            "data-emit-metadata": '0',
+            "data-theme": nowTheme,
+            "data-lang": 'zh-CN',
+            crossorigin: "anonymous",
+            async: true
+        }
+        let ele = document.createElement('script')
+        for (let key in config) {
+            ele.setAttribute(key, config[key])
+        }
+        document.getElementById('giscus-wrap').insertAdjacentElement('afterbegin', ele)
+    }
+
+    function changeGiscusTheme() {
+        let theme = document.documentElement.classList.contains('dark') ? 'transparent_dark' : 'light'
+
+        function sendMessage(message) {
+            const iframe = document.querySelector('iframe.giscus-frame');
+            if (!iframe) return;
+            iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+
+        sendMessage({
+            setConfig: {
+                theme: theme
+            }
+        });
+    }
+
+    loadGiscus();
+</script>
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024 - 2025</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">konoXIN</span>
+        </div>
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.3.0
+            </span>
+            <span class="footer-separator" data-separator=" | "></span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v2.2.5
+            </span>
+        </div>
+      
+
+        <div class="trm-footer-item">
+                    <span id="busuanzi_container_site_pv">
+                        本站总访问量 <span class="trm-accent-color" id="busuanzi_value_site_pv"></span> 次
+                    </span>
+        </div>
+      
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+    
+        <div class="trm-footer-item">
+            <a href="https://github.com/XINBOY722/XINBOY722.github.io" rel="noopener" target="_blank"> Github Pages </a>
+        </div>
+     
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+
+
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+    <div class="trm-search-popup">
+        <div class="trm-search-wrapper">
+            <div class="form trm-search-form">
+                <div class="trm-search-input-icon">
+                    <i class="iconfont fas fa-search"></i>
+                </div>
+                <input class="trm-search-input" type="text" placeholder="搜索文章...">
+                <div class="trm-search-btn-close">
+                    <i class="iconfont fas fa-times"></i>
+                </div>
+            </div>
+            <div class="trm-search-result-container">
+                <div class="trm-search-empty">
+                    请输入关键词进行搜索
+                </div>
+            </div>
+            <div class="trm-search-footer">
+                <div class="trm-search-stats"></div>
+                <ul class="trm-search-commands">
+                    <li>
+                        <kbd class="command-palette-commands-key">
+                            <svg width="15" height="15" aria-label="Escape key" role="img">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2">
+                                    <path
+                                        d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
+                                    </path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <span class="command-palette-Label">to close</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://npm.elemecdn.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="/js/plugins/typing.js?v=2.2.5"></script>
+    
+
+    
+        
+<script src="https://npm.elemecdn.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="/js/plugins/local_search.js?v=2.2.5"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+			<script src="/js/plugins/danmu.js?v=2.2.5"></script>
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+    <script data-swup-reload-script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+<script id="async-script" src="/js/main.js?v=2.2.5"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+</body>
+
+</html>
