@@ -1,0 +1,587 @@
+.recent-post-item .post_cover img.post_bg {
+  transform: scale(1.01);
+}
+
+/*加载样式*/
+
+.qexo_inner,
+.qexo_loader {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.qexo_loading {
+  min-height: 200px;
+}
+
+.qexo_part {
+  min-height: 100px;
+}
+
+.qexo_loader {
+  background-color: #90939920;
+  width: 64px;
+  height: 64px;
+  perspective: 800px;
+}
+
+.qexo_inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.qexo_inner.one {
+  left: 0;
+  top: 0;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid #888;
+  position: absolute;
+}
+
+.qexo_inner.two {
+  right: 0;
+  top: 0;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid #888;
+  position: absolute;
+}
+
+.qexo_inner.three {
+  right: 0;
+  bottom: 0;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid #888;
+  position: absolute;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+/* 每条动态 */
+
+#qexot>section>div>div>div {
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-top: 12px;
+}
+
+#qexot>section>div>div {
+  box-shadow: -1px 5px 10px 0 rgba(50, 50, 93, 0.1), 0 0 10px rgba(0, 0, 0, 0.07) !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#qexot p {
+  margin: 0;
+}
+
+#qexot .datafrom i {
+  margin-right: 4px;
+}
+
+/* 时间 */
+
+#qexot>section>div>div>div .qexot-datatime {
+  order: 1;
+  font-size: 0.6rem;
+}
+
+/* 标签 */
+
+#qexot>section>div>div>div .qexot-tags {
+  top: 24px;
+  position: absolute;
+  display: block;
+  padding: 5px 10px;
+  font-size: .6rem;
+  color: var(--efu-lighttext) !important;
+  cursor: pointer;
+  user-select: none;
+  padding: 0 12px;
+  transition: all 0.3s;
+  border-radius: 8px;
+  background-color: var(--efu-secondbg);
+  border: var(--style-border-always);
+}
+
+/* 内容 */
+
+#qexot>section>div>div>div .datacont {
+  order: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  line-height: 1.38;
+  margin: 8px 0;
+}
+
+#qexot .qexot-like {
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: xx-small;
+  fill: currentColor;
+  border-bottom: none;
+}
+
+#qexot .qexot-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#qexot .qexot-top {
+  position: absolute;
+  white-space: nowrap;
+  right: 0%;
+}
+
+#qexot div.qexot-content {
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  width: 100%;
+}
+
+#qexot .qexot div div.qexot-item {
+  position: relative;
+  /* width: 90%; */
+  border-radius: 12px;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-left: 5%; */
+}
+
+.qexot-more {
+  border-width: 1px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: -1px 5px 10px 0 rgba(50, 50, 93, 0.1), 0 0 10px rgba(0, 0, 0, 0.07) !important;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  padding-bottom: calc(0.375em - 1px);
+  padding-top: calc(0.375em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+.card-info .bottom-group .left .name {
+  color: #fff !important;
+}
+
+.card-info .bottom-group .left .desc {
+  color: #fff !important;
+}
+
+#aside-content .card-widget {
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.3s;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+  user-select: none;
+  border: none;
+}
+
+/* 排除.sticky_layout下的.card-widget */
+
+#aside-content .card-widget:not(.sticky_layout .card-widget)::before {
+  content: '';
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg, var(--efu-theme), var(--efu-blue) 60%, var(--efu-green));
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+  z-index: -1;
+}
+
+#aside-content .card-widget:not(.sticky_layout .card-widget)::after {
+  content: '';
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.4;
+  left: 0;
+  top: 210px;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg, var(--efu-theme), var(--efu-blue) 60%, var(--efu-green));
+  border-radius: 40%;
+  animation: wave 50s infinite linear;
+  z-index: -1;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 卡片内容样式保持不变 */
+
+.card-widget .card-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.sticky_layout .card-widget {
+  box-shadow: var(--efu-shadow-black);
+  user-select: none;
+  border-radius: var(--radius);
+  transition: 0.3s;
+  overflow: hidden;
+  background: var(--efu-card-bg);
+  border: var(--style-border) !important;
+}
+
+@font-face {
+  font-family: 'jps5';
+  src: url('font/jgs5.woff') format('woff'), url('font/jgs5.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'c16xcnb';
+  src: url('font/c16xcnb.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card-info .description {
+  font-family: 'jps5';
+}
+
+.card-info .bottom-group .left .desc {
+  line-height: 20px;
+}
+
+#about-page .author-content-item.myphoto img {
+  position: absolute !important;
+  height: auto;
+  min-width: 100%;
+  object-fit: cover;
+  transition: 0.6s;
+  user-select: none;
+  transform: scale(0.5);
+  left: -30%;
+}
+
+#Music-page meting-js .aplayer {
+  font-family: 'c16xcnb,jps5';
+}
+
+.author-content-item.personalities .image {
+  position: absolute;
+  right: -40px;
+  bottom: -5rem;
+  transition: transform 2s cubic-bezier(0.13, 0.45, 0.21, 1.02);
+  user-select: none;
+}
+
+.tags-group-icon i {
+  font-size: 2.5rem!important;
+}
+
+@media screen and (min-width: 1201px) {
+  .topGroup .todayCard .todayCard-cover {
+    zoom: 4.1;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+    transition: 0.3s;
+    /* transform: scale(0.5); */
+    background-size: 56% !important;
+  }
+  .topGroup .todayCard {
+    border: var(--style-border);
+    background: url(https://image.9game.cn/2017/6/9/17177232.jpg), url(https://image.9game.cn/2017/6/9/17177230.jpg), url(https://image.9game.cn/2017/6/9/17177234.jpg), url(https://image.9game.cn/2017/6/9/17177239.jpg), url(https://image.9game.cn/2017/6/9/17177239.jpg), url(https://image.9game.cn/2017/6/9/17177237.jpg), url(https://image.9game.cn/2017/6/9/17177219.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 20px 190px, 140px 170px, 460px 180px, 240px 90px, 50px 90px, 520px 150px, 500px 180px;
+    background-size: 15%, 15%, 13%, 25%, 25%, 20%, 13%;
+  }
+  .topGroup .todayCard:hover {
+    border: var(--style-border-hover);
+  }
+}
+.author-content-item.personalities{
+    border: var(--style-border);
+  background: url(https://image.9game.cn/2017/6/9/17177232.jpg),
+  url(https://image.9game.cn/2017/6/9/17177230.jpg),
+  url(https://image.9game.cn/2017/6/9/17177234.jpg),
+  url(https://image.9game.cn/2017/6/9/17177239.jpg),
+  url(https://image.9game.cn/2017/6/9/17177239.jpg),
+  url(https://image.9game.cn/2017/6/9/17177237.jpg),
+  url(https://image.9game.cn/2017/6/9/17177219.jpg);
+  background-repeat: no-repeat,
+  no-repeat;
+  background-position: 20px 190px,
+  140px 170px,
+  460px 180px,
+  240px 90px,
+  50px 90px,
+  520px 150px,
+  500px 180px;
+  background-size: 15%,
+  15%,
+  13%,
+  20%,
+  20%,
+  20%,
+  13%;
+}
+#about-page .author-content-item.myphoto{
+    border: var(--style-border);
+  background: url(https://image.9game.cn/2017/6/9/17177232.jpg),
+  url(https://image.9game.cn/2017/6/9/17177230.jpg),
+  url(https://image.9game.cn/2017/6/9/17177234.jpg),
+  url(https://image.9game.cn/2017/6/9/17177239.jpg),
+  url(https://image.9game.cn/2017/6/9/17177239.jpg),
+  url(https://image.9game.cn/2017/6/9/17177237.jpg),
+  url(https://image.9game.cn/2017/6/9/17177219.jpg);
+  background-repeat: no-repeat,
+  no-repeat;
+  background-position: 20px 190px,
+  140px 170px,
+  460px 180px,
+  240px 90px,
+  50px 90px,
+  520px 150px,
+  500px 180px;
+  background-size: 15%,
+  15%,
+  13%,
+  25%,
+  25%,
+  20%,
+  13%;
+}
+@media screen and (max-width: 768px){
+  .author-content-item.personalities {
+        border:var(--style-border-always);
+}
+
+#about-page .author-content-item.myphoto {
+      border: var(--style-border-always);
+}
+}
+@media screen and (min-width: 1201px) {
+  .topGroup .todayCard .todayCard-info {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 2;
+    color: var(--efu-fontcolor) !important;
+    max-width: 60%;
+    transition: 0.3s;
+  }
+}
+
+.card-info .avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--efu-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card-info .avatar img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.relatedPosts .relatedPosts-list>div .cover {
+  width: 374px;
+  min-width: 39%;
+  height: 100%;
+  transition: all 0.6s ease 0s;
+  object-fit: cover;
+  filter: brightness(0.9);
+  max-width: 45%;
+  transform: scale(1.01);
+}
+
+/* 新增加载动画 */
+
+@media screen and (max-width: 1219px) {
+  #aside-content {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .needEndHide {
+    display: block !important;
+    opacity: 0.5;
+  }
+}
+
+/* 波浪css */
+
+.main-hero-waves-area {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  z-index: 5;
+}
+
+.waves-area .waves-svg {
+  width: 100%;
+  height: 5rem;
+}
+
+/* Animation */
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+  fill: #f7f9febd;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+  fill: #f7f9fe82;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+  fill: #f7f9fe36;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+  fill: #f7f9fe;
+}
+
+/* 黑色模式背景 */
+
+[data-theme="dark"] .parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+  fill: #18171dc8;
+}
+
+[data-theme="dark"] .parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+  fill: #18171d80;
+}
+
+[data-theme="dark"] .parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+  fill: #18171d3e;
+}
+
+[data-theme="dark"] .parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+  fill: #18171d;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+
+@media (max-width: 768px) {
+  .waves-area .waves-svg {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
+.article-container img:not(.post_bg) {
+  border-radius: 12px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+.sharePage{
+      background: url(/images/xkl.gif) no-repeat center !important;
+    background-size: 25% !important;
+    background-position-y: bottom !important;
+    background-position-x: right !important;
+}
